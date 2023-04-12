@@ -7,12 +7,6 @@ public class BubbleSorter implements ISorter {
         this.checker = checker;
     }
 
-    private void swap(int[] values, int i1, int i2) {
-        int temp = values[i1];
-        values[i1] = values[i2];
-        values[i2] = temp;
-    }
-
     @Override
     public void sort(int[] values) {
         // TODO
