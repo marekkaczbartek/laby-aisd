@@ -55,7 +55,7 @@ public class IterativeMergeSorter implements ISorter {
     public void sort(int[] values) {
         // TODO
         // Pamiętaj o wywołaniu checker.check(values); po kazdym wywołaniu zewnętrznej petli
-        for (int currentSize = 1; currentSize <= values.length-1; currentSize *= 2) {
+        for (int currentSize = 1; currentSize < values.length; currentSize *= 2) {
             for (int start = 0; start < values.length - 1; start += currentSize * 2) {
                 int middle = Math.min(start + currentSize - 1, values.length - 1);
                 int end = Math.min(start + currentSize * 2 - 1, values.length - 1);

@@ -10,7 +10,7 @@ public class RadixSorter implements ISorter {
     public int arrMax(int[] arr) {
         int res = 0;
         for (int num : arr) {
-            res = (Math.max(num, res));
+            res = Math.max(num, res);
         }
         return res;
     }
