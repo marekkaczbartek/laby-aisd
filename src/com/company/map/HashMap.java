@@ -42,9 +42,9 @@ public class HashMap<TKey, TValue> {
             this.value = value;
         }
     }
-    private double loadFactor;
+    final private double loadFactor;
     private int size;
-    private int initialSize;
+    final private int initialSize;
 
     private int num_of_elements = 0;
     private Function<TKey, Integer> hashFunction;
@@ -70,7 +70,7 @@ public class HashMap<TKey, TValue> {
         int index = hashCode % size;
         if (map[index] != null) {
             for (Node node : map[index]) {
-                if (node.getKey().equals(key) && hashCode == node.getHash()) {
+                if (node.getKey().equals(key)) {
                     return node;
                 }
             }
@@ -81,8 +81,18 @@ public class HashMap<TKey, TValue> {
     private void checkLoadFactor() {
         if ((double) num_of_elements / size > loadFactor) {
             LinkedList<Node>[] newMap = new LinkedList[size * 2];
-            System.arraycopy(map, 0, newMap, 0, size);
             size *= 2;
+            for (LinkedList<Node> list : map) {
+                if (list != null) {
+                    for (Node node : list) {
+                        int index = node.getHash() % size;
+                        if (newMap[index] == null) {
+                            newMap[index] = new LinkedList<>();
+                        }
+                        newMap[index].add(node);
+                    }
+                }
+            }
             this.map = newMap;
         }
     }
@@ -182,5 +192,24 @@ public class HashMap<TKey, TValue> {
     public int size() {
         // TODO: Zwróć obecny rozmiar HashMap.
         return size;
+    }
+
+    public void rehash(Function<TKey, Integer> newHashFunction) {
+        // TODO: Zmień obecną funkcję hashującą na nową (wymaga przeliczenia dla wszystkich par klucz-wartość).
+        LinkedList<Node>[] newMap = new LinkedList[size];
+        for (LinkedList<Node> list : map) {
+            if (list != null) {
+                for (Node node : list) {
+                    int hash = newHashFunction.apply(node.getKey());
+                    int index = hash % size;
+                    if (newMap[index] == null) {
+                        newMap[index] = new LinkedList<>();
+                    }
+                    newMap[index].add(new Node(hash, node.getKey(), node.getValue()));
+                }
+            }
+        }
+        this.map = newMap;
+        this.hashFunction = newHashFunction;
     }
 }
