@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4c8882b-a0bd-455a-8133-9762d37d0e65" name="Changes" comment="" />
+    <list default="true" id="d4c8882b-a0bd-455a-8133-9762d37d0e65" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,54 +43,7 @@
       <recent name="C:\Users\barte\projects\studia-informatyka-stosowana\II-semestr\aisd-laboratoria\src\com\company\stackqueue" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BinarySearchTreeTests">
-    <configuration name="BinarySearchTreeTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aisd-laboratoria" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.tree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company.tree" />
-      <option name="MAIN_CLASS_NAME" value="com.company.tree.BinarySearchTreeTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BinarySearchTreeTests.check" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aisd-laboratoria" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.tree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company.tree" />
-      <option name="MAIN_CLASS_NAME" value="com.company.tree.BinarySearchTreeTests" />
-      <option name="METHOD_NAME" value="check" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BinarySearchTreeTests.delete_oneChildOnRight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aisd-laboratoria" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.tree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company.tree" />
-      <option name="MAIN_CLASS_NAME" value="com.company.tree.BinarySearchTreeTests" />
-      <option name="METHOD_NAME" value="delete_oneChildOnRight" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.DisjointSetForestTests">
     <configuration name="BinarySearchTreeTests.sort_emptyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aisd-laboratoria" />
       <extension name="coverage">
@@ -121,13 +76,59 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DisjointSetForestTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aisd-laboratoria" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.disjoinedset.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.disjoinedset" />
+      <option name="MAIN_CLASS_NAME" value="com.company.disjoinedset.DisjointSetForestTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DisjointSetLinkedListTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aisd-laboratoria" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.disjoinedset.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.disjoinedset" />
+      <option name="MAIN_CLASS_NAME" value="com.company.disjoinedset.DisjointSetLinkedListTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DisjointSetLinkedListTests.eightElementSets" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aisd-laboratoria" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.disjoinedset.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.disjoinedset" />
+      <option name="MAIN_CLASS_NAME" value="com.company.disjoinedset.DisjointSetLinkedListTests" />
+      <option name="METHOD_NAME" value="eightElementSets" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BinarySearchTreeTests" />
-        <item itemvalue="JUnit.BinarySearchTreeTests.sort_fullList" />
-        <item itemvalue="JUnit.BinarySearchTreeTests.sort_emptyList" />
-        <item itemvalue="JUnit.BinarySearchTreeTests.check" />
-        <item itemvalue="JUnit.BinarySearchTreeTests.delete_oneChildOnRight" />
+        <item itemvalue="JUnit.DisjointSetForestTests" />
+        <item itemvalue="JUnit.DisjointSetForestTests" />
+        <item itemvalue="JUnit.DisjointSetLinkedListTests" />
+        <item itemvalue="JUnit.DisjointSetLinkedListTests.eightElementSets" />
+        <item itemvalue="JUnit.DisjointSetLinkedListTests.eightElementSets" />
       </list>
     </recent_temporary>
   </component>
@@ -156,7 +157,9 @@
       <workItem from="1682964478154" duration="2106000" />
       <workItem from="1683530210478" duration="2863000" />
       <workItem from="1684066601585" duration="2646000" />
-      <workItem from="1684140250002" duration="14885000" />
+      <workItem from="1684140250002" duration="15046000" />
+      <workItem from="1684605664110" duration="204000" />
+      <workItem from="1684695931317" duration="8688000" />
     </task>
     <servers />
   </component>
@@ -187,9 +190,9 @@
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/tree/BinarySearchTreeTests.java</url>
-          <line>224</line>
-          <option name="timeStamp" value="22" />
+          <url>file://$PROJECT_DIR$/src/com/company/disjoinedset/DisjointSetTestBase.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
