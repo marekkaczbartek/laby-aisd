@@ -60,12 +60,13 @@ public class DisjointSetForest implements IDisjointSetStructure {
 
         if (node1.getRank() > node2.getRank()) {
             node2.setParent(rep1);
+            if (node1.getRank() == node2.getRank()) {
+                node1.setRank(node1.getRank() + 1);
+            }
         }
         else {
             node1.setParent(rep2);
-            if (node1.getRank() == node2.getRank()) {
-                node2.setRank(node2.getRank() + 1);
-            }
+
         }
     }
 }

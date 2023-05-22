@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d4c8882b-a0bd-455a-8133-9762d37d0e65" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/disjoinedset/DisjointSetForest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/disjoinedset/DisjointSetForest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,8 +127,8 @@
       <list>
         <item itemvalue="JUnit.DisjointSetForestTests" />
         <item itemvalue="JUnit.DisjointSetForestTests" />
+        <item itemvalue="JUnit.DisjointSetForestTests" />
         <item itemvalue="JUnit.DisjointSetLinkedListTests" />
-        <item itemvalue="JUnit.DisjointSetLinkedListTests.eightElementSets" />
         <item itemvalue="JUnit.DisjointSetLinkedListTests.eightElementSets" />
       </list>
     </recent_temporary>
@@ -159,7 +160,8 @@
       <workItem from="1684066601585" duration="2646000" />
       <workItem from="1684140250002" duration="15046000" />
       <workItem from="1684605664110" duration="204000" />
-      <workItem from="1684695931317" duration="8688000" />
+      <workItem from="1684695931317" duration="9016000" />
+      <workItem from="1684739012344" duration="83000" />
     </task>
     <servers />
   </component>
