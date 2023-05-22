@@ -58,7 +58,7 @@ public class DisjointSetForest implements IDisjointSetStructure {
         Node node1 = tree[rep1];
         Node node2 = tree[rep2];
 
-        if (node1.getRank() > node2.getRank()) {
+        if (node1.getRank() >= node2.getRank()) {
             node2.setParent(rep1);
             if (node1.getRank() == node2.getRank()) {
                 node1.setRank(node1.getRank() + 1);
