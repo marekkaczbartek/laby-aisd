@@ -2,7 +2,6 @@ package com.company.tree;
 
 import com.company.exceptions.DuplicateElementException;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -75,13 +74,6 @@ public class BinarySearchTree<T extends Comparable<T>> {
     private Node root;
 
     public BinarySearchTree() {this.root = new Node(null);}
-    public BinarySearchTree(T value) {
-        this.root = new Node(value, null);
-    }
-
-    public BinarySearchTree(Node root) {
-        this.root = root;
-    }
 
     public Node getRoot() {
         return root;
@@ -222,11 +214,6 @@ public class BinarySearchTree<T extends Comparable<T>> {
         return result.length() > 0 ? result.substring(2) : result;
     }
 
-    public String toStringInOrder() {
-        String result = toStringInOrder(root);
-        return result.length() > 0 ? result.substring(2) : result;
-    }
-
     private String toStringInOrder(Node node) {
         // TODO: Zwróć wartość String reprezentującą drzewo po przejściu metodą in-order.
         String result = "";
@@ -248,14 +235,15 @@ public class BinarySearchTree<T extends Comparable<T>> {
         return result;
     }
 
+    public String toStringInOrder() {
+        String result = toStringInOrder(root);
+        return result.length() > 0 ? result.substring(2) : result;
+    }
+
     public List<T> toListInOrder() {
         return toListInOrder(root);
     }
 
-    public String toStringPostOrder() {
-        String result = toStringPostOrder(root);
-        return result.length() > 0 ? result.substring(2) : result;
-    }
     private String toStringPostOrder(Node node) {
         // TODO: Zwróć wartość String reprezentującą drzewo po przejściu metodą in-order.
         String result = "";
@@ -265,5 +253,9 @@ public class BinarySearchTree<T extends Comparable<T>> {
             result = result + ", " + node.getValue();
         }
         return result;
+    }
+    public String toStringPostOrder() {
+        String result = toStringPostOrder(root);
+        return result.length() > 0 ? result.substring(2) : result;
     }
 }

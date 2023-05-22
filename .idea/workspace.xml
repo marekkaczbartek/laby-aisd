@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d4c8882b-a0bd-455a-8133-9762d37d0e65" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/disjoinedset/DisjointSetForest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/disjoinedset/DisjointSetForest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/tree/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/tree/BinarySearchTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,21 +24,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/barte/projects/studia-informatyka-stosowana/II-semestr/aisd-laboratoria&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/barte/projects/studia-informatyka-stosowana/II-semestr/aisd-laboratoria",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\barte\projects\studia-informatyka-stosowana\II-semestr\aisd-laboratoria\src\com\company\stackqueue" />
@@ -161,7 +162,8 @@
       <workItem from="1684140250002" duration="15046000" />
       <workItem from="1684605664110" duration="204000" />
       <workItem from="1684695931317" duration="9016000" />
-      <workItem from="1684739012344" duration="83000" />
+      <workItem from="1684739012344" duration="352000" />
+      <workItem from="1684739668069" duration="435000" />
     </task>
     <servers />
   </component>
