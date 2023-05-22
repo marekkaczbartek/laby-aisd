@@ -163,10 +163,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
     public void delete(T value) {
         // TODO: Usunięcie wskazanej wartości z drzewa.
         Node node = this.getNode(value);
-        if (node.getValue() == null) {
-            return;
-        }
-        else if (node.getLeft() == null && node.getRight() == null) {
+        if (node.getLeft() == null && node.getRight() == null) {
             node.setValue(null);
         }
         else if (node.getLeft() == null || node.getLeft().getValue() == null) {

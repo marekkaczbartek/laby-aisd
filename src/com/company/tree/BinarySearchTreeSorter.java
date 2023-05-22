@@ -2,9 +2,6 @@ package com.company.tree;
 
 import com.company.exceptions.DuplicateElementException;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedList;
 import java.util.List;
 
 public class BinarySearchTreeSorter {
