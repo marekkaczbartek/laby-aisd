@@ -144,9 +144,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
         }
         Node node = this.getNode(value);
         if (node.getValue() == null) {
-            Node parent = node.getParent();
             node.setValue(value);
-
         }
         else {
             throw new DuplicateElementException();

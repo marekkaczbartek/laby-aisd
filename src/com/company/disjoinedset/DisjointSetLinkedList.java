@@ -4,11 +4,13 @@ import com.company.exceptions.ItemOutOfRangeException;
 public class DisjointSetLinkedList implements IDisjointSetStructure {
     private class Node {
         private int rep;
+        private int rank;
         private int next;
         private int last;
 
         public Node(int rep) {
             this.rep = rep;
+            this.rank = 0;
             this.next = -1;
             this.last = rep;
         }
@@ -36,6 +38,14 @@ public class DisjointSetLinkedList implements IDisjointSetStructure {
         public void setLast(int last) {
             this.last = last;
         }
+
+        public int getRank() {
+            return rank;
+        }
+
+        public void setRank(int rank) {
+            this.rank = rank;
+        }
     }
     private int size;
     private Node[] list;
@@ -60,13 +70,23 @@ public class DisjointSetLinkedList implements IDisjointSetStructure {
         checkSize(item1, size);
         checkSize(item2, size);
 
-        Node node1 = list[item1];
-        Node node2 = list[item2];
+        int rep1 = list[item1].getRep();
+        int rep2 = list[item2].getRep();
 
-        int rep1 = node1.getRep();
-        int rep2 = node2.getRep();
-        int last1 = list[rep1].getLast();
-        int last2 = list[rep2].getLast();
+        Node node1, node2;
+
+        if (list[rep1].getRank() >= list[rep2].getRank()) {
+            node1 = list[rep1];
+            node2 = list[rep2];
+        }
+        else {
+            node1 = list[rep2];
+            node2 = list[rep1];
+        }
+        node1.setRank(node1.getRank() + node2.getRank() + 1);
+
+        int last1 = node1.getLast();
+        int last2 = node2.getLast();
         list[last1].setNext(rep2);
         Node current = list[rep2];
         while (current.getNext() != -1) {

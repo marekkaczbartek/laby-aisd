@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d4c8882b-a0bd-455a-8133-9762d37d0e65" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/disjoinedset/DisjointSetLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/disjoinedset/DisjointSetLinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/tree/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/tree/BinarySearchTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +46,7 @@
       <recent name="C:\Users\barte\projects\studia-informatyka-stosowana\II-semestr\aisd-laboratoria\src\com\company\stackqueue" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DisjointSetForestTests">
+  <component name="RunManager" selected="JUnit.DisjointSetLinkedListTests">
     <configuration name="BinarySearchTreeTests.sort_emptyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aisd-laboratoria" />
       <extension name="coverage">
@@ -126,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DisjointSetForestTests" />
-        <item itemvalue="JUnit.DisjointSetForestTests" />
-        <item itemvalue="JUnit.DisjointSetForestTests" />
         <item itemvalue="JUnit.DisjointSetLinkedListTests" />
         <item itemvalue="JUnit.DisjointSetLinkedListTests.eightElementSets" />
+        <item itemvalue="JUnit.DisjointSetForestTests" />
+        <item itemvalue="JUnit.DisjointSetForestTests" />
+        <item itemvalue="JUnit.DisjointSetForestTests" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +164,7 @@
       <workItem from="1684605664110" duration="204000" />
       <workItem from="1684695931317" duration="9016000" />
       <workItem from="1684739012344" duration="352000" />
-      <workItem from="1684739668069" duration="435000" />
+      <workItem from="1684739668069" duration="1664000" />
     </task>
     <servers />
   </component>
@@ -192,11 +193,6 @@
           <url>file://$PROJECT_DIR$/src/com/company/map/HashMapTests.java</url>
           <line>103</line>
           <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/disjoinedset/DisjointSetTestBase.java</url>
-          <line>78</line>
-          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
