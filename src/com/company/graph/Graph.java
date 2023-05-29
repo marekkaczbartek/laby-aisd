@@ -1,0 +1,82 @@
+package com.company.graph;
+
+import java.lang.reflect.Array;
+import java.util.*;
+import com.company.disjoinedset.DisjointSetForest;
+import com.company.exceptions.FullStackException;
+import com.company.exceptions.ItemOutOfRangeException;
+import com.company.stackqueue.ArrayStack;
+
+public class Graph<T> {
+
+    private int[][] matrix;
+    private ArrayList<T> vertices;
+    public Graph(List<Edge<T>> edges) {
+        // TODO: Przekształcenie krawędzi na macierz sąsiedztwa, odwzorowanie wierzchołka na indeks, itp.
+        Set<T> vertices = new HashSet<>();
+        for (Edge<T> edge : edges) {
+            vertices.add(edge.getSource());
+            vertices.add(edge.getDestination());
+        }
+        this.vertices = new ArrayList<>(vertices);
+        this.matrix = new int[vertices.size()][vertices.size()];
+        for (Edge<T> edge : edges) {
+            int srcIndex = this.vertices.indexOf(edge.getSource());
+            int destIndex = this.vertices.indexOf(edge.getDestination());
+            this.matrix[srcIndex][destIndex] = edge.getWeight();
+        }
+    }
+
+    private String depthFirstVisit(T node, int[] colors) {
+        int index = vertices.indexOf(node);
+        colors[index] = 1;
+        for (int j = 0; j < matrix.length; j++) {
+            if (matrix[index][j] != 0) {
+                if (colors[j] == 0) {
+                    depthFirstVisit(vertices.get(j), colors);
+                }
+            }
+        }
+        colors[index] = 2;
+        return node.toString();
+    }
+
+    public String depthFirst(T startNode) throws NoSuchElementException, FullStackException {
+        // TODO: Przejście przez graf metodą najpierw-wgłąb od podanego wierzchołka
+        StringBuilder result = new StringBuilder();
+        if (!vertices.contains(startNode)) {
+            throw new NoSuchElementException();
+        }
+        int[] colors = new int[this.vertices.size()];
+        for (T v : vertices) {
+            if (colors[vertices.indexOf(v)] == 0) {
+                result.append(depthFirstVisit(v, colors));
+            }
+        }
+
+        return result.toString();
+    }
+
+    public String breadthFirst(T startNode) throws NoSuchElementException {
+        // TODO: Przejście przez graf metodą najpierw-wszerz od podanego wierzchołka
+        if (!vertices.contains(startNode)) {
+            throw new NoSuchElementException();
+        }
+        return "";
+    }
+
+    public int connectedComponents() throws ItemOutOfRangeException {
+        // TODO: Liczba składowych spójnych grafu
+        DisjointSetForest forest = new DisjointSetForest(this.vertices.size());
+        for (int i = 0; i < this.vertices.size(); i++) {
+            for (int j = 0; j < this.vertices.size(); j++) {
+                if (matrix[i][j] != 0) {
+                    if (forest.findSet(i) != forest.findSet(j)) {
+                        forest.union(i, j);
+                    }
+                }
+            }
+        }
+        return forest.getNumberOfSets();
+    }
+}

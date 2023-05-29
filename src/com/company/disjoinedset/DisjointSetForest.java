@@ -2,6 +2,11 @@ package com.company.disjoinedset;
 
 import com.company.exceptions.ItemOutOfRangeException;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 public class DisjointSetForest implements IDisjointSetStructure {
     private class Node {
         private int parent;
@@ -68,5 +73,13 @@ public class DisjointSetForest implements IDisjointSetStructure {
             node1.setParent(rep2);
 
         }
+    }
+
+    public int getNumberOfSets() {
+        Set<Integer> set = new HashSet<>();
+        for (Node i : tree) {
+            set.add(i.getParent());
+        }
+        return set.size();
     }
 }
