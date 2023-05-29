@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d4c8882b-a0bd-455a-8133-9762d37d0e65" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/disjoinedset/DisjointSetForest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/disjoinedset/DisjointSetForest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/aisd-laboratoria/com/company/graph/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/aisd-laboratoria/com/company/graph/Graph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/graph/Graph.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,21 +47,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.GraphTests">
-    <configuration name="DisjointSetForestTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aisd-laboratoria" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.disjoinedset.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company.disjoinedset" />
-      <option name="MAIN_CLASS_NAME" value="com.company.disjoinedset.DisjointSetForestTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DisjointSetLinkedListTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aisd-laboratoria" />
       <extension name="coverage">
@@ -107,6 +93,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GraphTests.breadthFirst_subgraph5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aisd-laboratoria" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.graph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.graph" />
+      <option name="MAIN_CLASS_NAME" value="com.company.graph.GraphTests" />
+      <option name="METHOD_NAME" value="breadthFirst_subgraph5" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GraphTests.depthFirst_subgraph0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aisd-laboratoria" />
       <extension name="coverage">
@@ -126,10 +128,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.GraphTests" />
+        <item itemvalue="JUnit.GraphTests.breadthFirst_subgraph5" />
         <item itemvalue="JUnit.GraphTests.depthFirst_subgraph0" />
         <item itemvalue="JUnit.DisjointSetLinkedListTests" />
         <item itemvalue="JUnit.DisjointSetLinkedListTests.eightElementSets" />
-        <item itemvalue="JUnit.DisjointSetForestTests" />
       </list>
     </recent_temporary>
   </component>
@@ -165,6 +167,7 @@
       <workItem from="1684739668069" duration="3710000" />
       <workItem from="1684783314468" duration="412000" />
       <workItem from="1685306186691" duration="6524000" />
+      <workItem from="1685344214218" duration="4126000" />
     </task>
     <servers />
   </component>
@@ -195,9 +198,14 @@
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/graph/Graph.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/graph/GraphTests.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="8" />
+          <line>116</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
