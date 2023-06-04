@@ -1,4 +1,4 @@
-package com.company.graph;
+package com.company.graph.directed;
 
 public class Edge<T> {
     private T source;

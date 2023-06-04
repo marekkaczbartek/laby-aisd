@@ -1,4 +1,4 @@
-package com.company.graph;
+package com.company.graph.directed;
 
 import com.company.exceptions.FullStackException;
 import com.company.exceptions.ItemOutOfRangeException;
