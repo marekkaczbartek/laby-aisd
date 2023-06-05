@@ -44,15 +44,9 @@ public class Graph<T> {
         }
     }
 
-    public Map<T, Integer> calculateShortestPaths(T startNode) throws NoSuchElementException {
-        // TODO: Wylicz najkrótsze ścieżki do każdego wierzchołka w grafie (Dijkstra)
-        if (!this.graphMap.containsKey(startNode)) {
-            throw new NoSuchElementException();
-        }
-        T currentNode = startNode;
+    private Map<T, Integer> initPathsMap(T startNode) {
         Map<T, Integer> pathsMap = new HashMap<>();
-        Set<T> nodeSet = this.graphMap.keySet();
-        for (T node : nodeSet) {
+        for (T node : this.graphMap.keySet()) {
             if (node.equals(startNode)) {
                 pathsMap.put(node, 0);
             }
@@ -60,25 +54,59 @@ public class Graph<T> {
                 pathsMap.put(node, null);
             }
         }
+        return pathsMap;
+    }
+
+    private void updatePaths(T currentNode, Map<T, Integer> pathsMap, Set<T> nodeSet) {
+        for (listNode node : graphMap.get(currentNode)) {
+            int distance = pathsMap.get(currentNode) + node.getDistance();
+            if (pathsMap.get(node.getValue()) == null || pathsMap.get(node.getValue()) > distance) {
+                pathsMap.put(node.getValue(), distance);
+            }
+        }
+        nodeSet.remove(currentNode);
+    }
+
+    private T findNext(Map<T, Integer> pathsMap, Set<T> nodeSet) {
+        T min = null;
+        for (T node : nodeSet) {
+            if (pathsMap.get(node) != null) {
+                if (min == null || pathsMap.get(node) < pathsMap.get(min)) {
+                    min = node;
+                }
+            }
+        }
+        return min;
+    }
+
+    public Map<T, Integer> calculateShortestPaths(T startNode) throws NoSuchElementException {
+        // TODO: Wylicz najkrótsze ścieżki do każdego wierzchołka w grafie (Dijkstra)
+        if (!this.graphMap.containsKey(startNode)) {
+            throw new NoSuchElementException();
+        }
+        T currentNode = startNode;
+        Map<T, Integer> pathsMap = initPathsMap(startNode);
+        Set<T> nodeSet = this.graphMap.keySet();
         while (!nodeSet.isEmpty()) {
-            for (listNode node : graphMap.get(currentNode)) {
-                int distance = pathsMap.get(currentNode) + node.getDistance();
-                if (pathsMap.get(node.getValue()) == null || pathsMap.get(node.getValue()) > distance) {
-                    pathsMap.put(node.getValue(), distance);
-                }
-            }
-            nodeSet.remove(currentNode);
-            T min = null;
-            for (T node : nodeSet) {
-                if (pathsMap.get(node) != null) {
-                    if (min == null || pathsMap.get(node) < pathsMap.get(min)) {
-                        min = node;
-                    }
-                }
-            }
-            currentNode = min;
+            updatePaths(currentNode, pathsMap, nodeSet);
+            currentNode = findNext(pathsMap, nodeSet);
         }
         pathsMap.remove(startNode);
         return pathsMap;
+    }
+
+    public Integer calculateShortestPath(T startNode, T endNode) throws NoSuchElementException {
+        // TODO: Wylicz najkrótszą ścieżkę pomiędzy wierzchołkami w grafie
+        if (!this.graphMap.containsKey(endNode) || !this.graphMap.containsKey(startNode)) {
+            throw new NoSuchElementException();
+        }
+        T currentNode = startNode;
+        Map<T, Integer> pathsMap = initPathsMap(startNode);
+        Set<T> nodeSet = this.graphMap.keySet();
+        while (!nodeSet.isEmpty() && !currentNode.equals(endNode)) {
+            updatePaths(currentNode, pathsMap, nodeSet);
+            currentNode = findNext(pathsMap, nodeSet);
+        }
+        return pathsMap.get(currentNode);
     }
 }
