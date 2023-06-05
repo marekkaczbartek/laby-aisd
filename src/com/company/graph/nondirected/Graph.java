@@ -27,7 +27,8 @@ public class Graph<T> {
             this.distance = distance;
         }
     }
-    private Map<T, LinkedList<listNode>> graphMap;
+
+    private final Map<T, LinkedList<listNode>> graphMap;
     public Graph(List<Edge<T>> edges) {
         // TODO: Konstruktor
         graphMap = new HashMap<>();
@@ -51,7 +52,7 @@ public class Graph<T> {
                 pathsMap.put(node, 0);
             }
             else {
-                pathsMap.put(node, null);
+                pathsMap.put(node, Integer.MAX_VALUE);
             }
         }
         return pathsMap;
@@ -60,7 +61,7 @@ public class Graph<T> {
     private void updatePaths(T currentNode, Map<T, Integer> pathsMap, Set<T> nodeSet) {
         for (listNode node : graphMap.get(currentNode)) {
             int distance = pathsMap.get(currentNode) + node.getDistance();
-            if (pathsMap.get(node.getValue()) == null || pathsMap.get(node.getValue()) > distance) {
+            if (distance < pathsMap.get(node.getValue())) {
                 pathsMap.put(node.getValue(), distance);
             }
         }
@@ -70,10 +71,8 @@ public class Graph<T> {
     private T findNext(Map<T, Integer> pathsMap, Set<T> nodeSet) {
         T min = null;
         for (T node : nodeSet) {
-            if (pathsMap.get(node) != null) {
-                if (min == null || pathsMap.get(node) < pathsMap.get(min)) {
-                    min = node;
-                }
+            if (min == null || pathsMap.get(node) < pathsMap.get(min)) {
+                min = node;
             }
         }
         return min;
