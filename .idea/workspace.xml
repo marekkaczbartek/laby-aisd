@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4c8882b-a0bd-455a-8133-9762d37d0e65" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/aisd-laboratoria/com/company/graph/nondirected/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/aisd-laboratoria/com/company/graph/nondirected/Graph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/graph/nondirected/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/graph/nondirected/Graph.java" afterDir="false" />
-    </list>
+    <list default="true" id="d4c8882b-a0bd-455a-8133-9762d37d0e65" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -169,7 +165,7 @@
       <workItem from="1685306186691" duration="6524000" />
       <workItem from="1685344214218" duration="4152000" />
       <workItem from="1685898654387" duration="8193000" />
-      <workItem from="1685949671039" duration="2575000" />
+      <workItem from="1685949671039" duration="2629000" />
     </task>
     <servers />
   </component>

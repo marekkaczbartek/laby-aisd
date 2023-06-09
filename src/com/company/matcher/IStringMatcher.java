@@ -1,3 +1,5 @@
+package com.company.matcher;
+
 import java.util.List;
 
 public interface IStringMatcher {
