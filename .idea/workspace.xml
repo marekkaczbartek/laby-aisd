@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4c8882b-a0bd-455a-8133-9762d37d0e65" name="Changes" comment="" />
+    <list default="true" id="d4c8882b-a0bd-455a-8133-9762d37d0e65" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/matcher/AutomatonMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/matcher/AutomatonMatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/matcher/IStringMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/matcher/IStringMatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/matcher/KMPMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/matcher/KMPMatcher.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,7 +32,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/barte/projects/studia-informatyka-stosowana/II-semestr/aisd-laboratoria&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/barte/projects/studia-informatyka-stosowana/II-semestr/aisd-laboratoria/src/com/company&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -38,11 +43,45 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\barte\projects\studia-informatyka-stosowana\II-semestr\aisd-laboratoria\src\com\company" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\barte\projects\studia-informatyka-stosowana\II-semestr\aisd-laboratoria\src\com\company\stackqueue" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GraphTests (1)">
+  <component name="RunManager" selected="JUnit.KMPMatcherTests">
+    <configuration name="AutomatonMatcherTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aisd-laboratoria" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.matcher.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.matcher" />
+      <option name="MAIN_CLASS_NAME" value="com.company.matcher.AutomatonMatcherTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AutomatonMatcherTests.almostTwoMatches_missingCharInTheBeginning" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aisd-laboratoria" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.matcher.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.matcher" />
+      <option name="MAIN_CLASS_NAME" value="com.company.matcher.AutomatonMatcherTests" />
+      <option name="METHOD_NAME" value="almostTwoMatches_missingCharInTheBeginning" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GraphTests (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aisd-laboratoria" />
       <extension name="coverage">
@@ -58,76 +97,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GraphTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="KMPMatcherTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aisd-laboratoria" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.graph.*" />
+          <option name="PATTERN" value="com.company.matcher.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.company.graph" />
-      <option name="MAIN_CLASS_NAME" value="com.company.graph.GraphTests" />
+      <option name="PACKAGE_NAME" value="com.company.matcher" />
+      <option name="MAIN_CLASS_NAME" value="com.company.matcher.KMPMatcherTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GraphTests.breadthFirst_subgraph5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="KMPMatcherTests.almostTwoMatches_missingCharInTheBeginning()" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aisd-laboratoria" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.graph.*" />
+          <option name="PATTERN" value="com.company.matcher.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.company.graph" />
-      <option name="MAIN_CLASS_NAME" value="com.company.graph.GraphTests" />
-      <option name="METHOD_NAME" value="breadthFirst_subgraph5" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GraphTests.calculateShortestPaths_a" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aisd-laboratoria" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.graph.nondirected.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company.graph.nondirected" />
-      <option name="MAIN_CLASS_NAME" value="com.company.graph.nondirected.GraphTests" />
-      <option name="METHOD_NAME" value="calculateShortestPaths_a" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GraphTests.depthFirst_subgraph0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aisd-laboratoria" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.graph.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company.graph" />
-      <option name="MAIN_CLASS_NAME" value="com.company.graph.GraphTests" />
-      <option name="METHOD_NAME" value="depthFirst_subgraph0" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.company.matcher" />
+      <option name="MAIN_CLASS_NAME" value="com.company.matcher.KMPMatcherTests" />
+      <option name="TEST_OBJECT" value="uniqueId" />
+      <uniqueIds>
+        <uniqueId value="[engine:junit-jupiter]/[class:com.company.matcher.KMPMatcherTests]/[method:almostTwoMatches_missingCharInTheBeginning()]" />
+      </uniqueIds>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GraphTests (1)" />
-        <item itemvalue="JUnit.GraphTests.calculateShortestPaths_a" />
-        <item itemvalue="JUnit.GraphTests" />
-        <item itemvalue="JUnit.GraphTests.breadthFirst_subgraph5" />
-        <item itemvalue="JUnit.GraphTests.depthFirst_subgraph0" />
+        <item itemvalue="JUnit.KMPMatcherTests" />
+        <item itemvalue="JUnit.KMPMatcherTests.almostTwoMatches_missingCharInTheBeginning()" />
+        <item itemvalue="JUnit.AutomatonMatcherTests" />
+        <item itemvalue="JUnit.AutomatonMatcherTests.almostTwoMatches_missingCharInTheBeginning" />
+        <item itemvalue="JUnit.AutomatonMatcherTests.almostTwoMatches_missingCharInTheBeginning" />
       </list>
     </recent_temporary>
   </component>
@@ -166,6 +175,9 @@
       <workItem from="1685344214218" duration="4152000" />
       <workItem from="1685898654387" duration="8193000" />
       <workItem from="1685949671039" duration="2629000" />
+      <workItem from="1686315704930" duration="808000" />
+      <workItem from="1686333651605" duration="1077000" />
+      <workItem from="1686391047456" duration="6564000" />
     </task>
     <servers />
   </component>
@@ -204,6 +216,11 @@
           <url>file://$PROJECT_DIR$/src/com/company/graph/directed/GraphTests.java</url>
           <line>116</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/matcher/StringMatcherTestBase.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
